@@ -1,0 +1,36 @@
+:root {
+  --rojoKittsu: #861811;
+  --moradoKittsu: #583d8f;
+  --azulKittsu: #262859;
+}
+@font-face {
+  font-family: 'Japan';
+  src: url('Japan.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'Japan';
+  font-weight: 100;
+  color: var(--azulKittsu);
+  transition: all ease .3s;
+}
+h1:hover {
+  color: var(--moradoKittsu);
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
