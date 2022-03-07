@@ -352,3 +352,14 @@ input[type=button], input[type=submit], input[type=reset] {
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
   background-color: var(--moradoKittsu);
 }
+table {
+  border: 2px solid var(--moradoKittsu);
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  width: 100%;
+}
+table th{
+  border: 2px solid var(--moradoKittsu);
+  font-size: 1em;
+}
