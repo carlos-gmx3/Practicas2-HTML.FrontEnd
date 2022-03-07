@@ -14,23 +14,341 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(208, 195, 241);
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
 .container {
+  margin: 0 auto;
   max-width: 1100px;
   width: 90%;
-  margin: 0 auto;
 }
-h1 {
-  font-family: 'Japan';
-  font-weight: 100;
+header {
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+.headerMenu {
+  align-items: center;
+  display: flex;
+  height: 120px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main {
+  background-color: white;
+}
+footer {
+  margin-top: 3vh;
+  background-color: var(--moradoKittsu);
+  height: 100px;
+  width: 100%;
+}
+footer .container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+}
+footer p {
+  color: white;
+  padding: 1em;
+}
+main img {
+  width: 100%;
+}
+main h3{
   color: var(--azulKittsu);
-  transition: all ease .3s;
+  font-family: 'Japan', sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+  padding: 3%;
 }
-h1:hover {
+main h4{
   color: var(--moradoKittsu);
+  font-family: 'Japan', sans-serif;
+  font-size: 2em;
+  font-weight: 100;
 }
-a {
+main h5{
+  color: var(--moradoKittsu);
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.navIcon {
+  height: 100%;
+  padding: 10px 0;
+}
+header h1 {
+  color: var(--azulKittsu);
+  display: inline;
+  font-family: 'Japan';
+  font-size: 50px;
+  font-weight: 100;
+  line-height: .5em;
+  padding: .5em .5em .5em 0;
+  transition: all ease .3s;
+  white-space: nowrap;
+}
+a.homeButton {
+  align-items: flex-end;
+  display: inline;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
   text-decoration: none;
 }
-p {
+ul.navHeader {
+  align-items: center;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+@media only screen and (min-width: 720px){
+  ul.navHeader {
+    display: flex;
+  }
+}
+.navHeader li {
+  padding: .5em;
+}
+.dropDownCakes, .dropDownDesserts {
   font-family: 'Ubuntu Condensed', sans-serif;
+  position: relative;
+}
+.cakeContent, .dessertsContent {
+  background-color: white;
+  display: none;
+  flex-flow: column nowrap;
+  position: absolute;
+  z-index: 3;
+}
+.dropDownCakes:hover .cakeContent,
+.dropDownDesserts:hover .dessertsContent {
+  display: flex;
+}
+.dropDownMenu button {
+  background-color: white;
+  border: none;
+  color: var(--moradoKittsu);
+  font-size: 1.1em;
+  padding: 1em;
+  transition: all ease-in-out .3s;
+  width: 100px;
+}
+.dropDownMenu button:hover {
+  color: var(--rojoKittsu);
+  transform: scale(1.2);
+}
+.dropDownMenu a {
+  color: var(--moradoKittsu);
+  font-size: 1em;
+  padding: 1em;
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+  width: 100%;
+}
+.dropDownMenu a:hover {
+  background-color: rgb(208, 195, 241);
+  color: var(--rojoKittsu);
+}
+.userMenu {
+  position: relative;
+}
+.burguerNav {
+  list-style: none;
+  position: absolute;
+}
+@media only screen and (min-width: 720px){
+  .userMenu {
+    display: none;
+  }
+}
+/* Burguer Menu */
+.burguerFlex {
+  align-items: center;
+  background-color: white;
+  border: 3px solid var(--azulKittsu);
+  border-radius: 5px;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  width: 45px;
+}
+.burguer {
+  cursor: pointer;
+  display: inline-block;
+}
+.bar1, .bar2, .bar3 {
+  background-color: var(--azulKittsu);
+  border-radius: 2px;
+  height: 5px;
+  margin: 5px;
+  transition: all 0.3s linear;
+  width: 35px;
+}
+.menu .bar1 {
+  background-color: var(--rojoKittsu);
+  transform-origin: center;
+  transform: rotate(-45deg)
+  translate(-7px, 7px);
+}
+.menu .bar2 {
+  background-color: var(--rojoKittsu);
+  transform-origin: center;
+  transform: scale(0.1);
+  visibility: hidden;
+}
+.menu .bar3 {
+  background-color: var(--rojoKittsu);
+  transform-origin: center;
+  transform: rotate(45deg)
+  translate(-7px, -7px);
+}
+.burguerNav {
+  display: none;
+  transform: translate(-20vw, 0);
+  width: 30vw;
+}
+.burguerNav li {
+  background-color: white;
+  border: none;
+  color: var(--azulKittsu);
+  font-size: 1.1em;
+  transition: all ease-in-out .3s;
+  width: 100%;
+}
+.burguerNav h3{
+  font-family: 'Japan', sans-serif;
+  font-weight: 100;
+  padding: .5em;
+}
+.burguerNav a {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: var(--moradoKittsu);
+  background-color: white;
+  display: block;
+  font-size: 1em;
+  padding: 1em;
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+  width: 100%;
+}
+.burguerNav a:hover {
+  background-color: rgb(208, 195, 241);
+  color: var(--rojoKittsu);
+}
+
+.cakeDemo {
+  display: grid;
+  grid-gap: 3% 3%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+}
+.cake {
+  background-position: center top;
+  background-size: cover;
+  height: 300px;
+  width: 35vw;
+}
+@media only screen and (min-width: 720px){
+  .cakeDemo {
+    display: grid;
+    grid-gap: 3% 3%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+  }
+  .cake {
+    background-position: center top;
+    background-size: cover;
+    height: 200px;
+    width: 30vh;
+  }
+}
+@media only screen and (min-width: 1080px){
+  .cakeDemo {
+    display: grid;
+    grid-gap: 3% 3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .cake {
+    background-position: center top;
+    background-size: cover;
+    height: 300px;
+    width: 25vh;
+  }
+}
+.cake1 {
+  background-image: url("/media/PastelKittsu (1).jpg");
+}
+.cake2 {
+  background-image: url("/media/PastelKittsu (2).jpg");
+}
+.cake3 {
+  background-image: url("/media/PastelKittsu (3).jpg");
+}
+.cake4 {
+  background-image: url("/media/PastelKittsu (4).jpg");
+}
+.cake5 {
+  background-image: url("/media/PastelKittsu (5).jpg");
+}
+.cake6 {
+  background-image: url("/media/PastelKittsu (6).jpg");
+}
+.cake7 {
+  background-image: url("/media/PastelKittsu (7).jpg");
+}
+.cake8 {
+  background-image: url("/media/PastelKittsu (8).jpg");
+}
+.cake9 {
+  background-image: url("/media/PastelKittsu (9).jpg");
+}
+form.aTuGusto {
+  padding: 3%;
+}
+form.aTuGusto label{
+  color: var(--azulKittsu);
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1.1em;
+  font-weight: 100;
+}
+.sabores {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.sabores section div {
+  padding: 2px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: var(--rojoKittsu);
+  border: none;
+  color: white;
+  font-family: 'Japan', sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  padding: 16px;
+  text-decoration: none;
+  transition: all ease-in-out .25s;
+  margin: 4px;
+  cursor: pointer;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: var(--moradoKittsu);
 }

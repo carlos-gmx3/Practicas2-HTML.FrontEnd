@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles Kittsu</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <header>
+      <div class="container headerMenu">
+        <a class="homeButton" href="index.html">
+          <img class="navIcon" src="/media/KittsuIcon.png" alt="LogoKittsu">
+          <h1>Pasteles Kittsu</h1>
+        </a>
+        <ul class="navHeader">
+          <li class="dropDownCakes dropDownMenu">
+            <button class="dropCakesBtn">Pasteles</button>
+            <div class="cakeContent">
+              <a href="pastelesAparador.html">En Aparador</a>
+              <a href="pastelesAtuGusto.html">A Tu Gusto</a>
+              <a href="pastelesDiseño.html">De Diseño</a>
+            </div>
+          </li>
+          <li class="dropDownDesserts dropDownMenu">
+            <button class="dropDessertsBtn">Postres</button>
+            <div class="dessertsContent">
+              <a href="#">En Aparador</a>
+              <a href="#">De Diseño</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="userMenu">
+
+          <div class="burguerFlex">
+            <div class="burguer">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <ul class="burguerNav">
+            <li><h3>Pasteles</h3></li>
+            <li><a href="pastelesAparador.html">En Aparador</a></li>
+            <li><a href="pastelesAtuGusto.html">A Tu Gusto</a></li>
+            <li><a href="pastelesDiseño.html">De Diseño</a></li>
+            <li><h3>Postres</h3></li>
+            <li><a href="#">En Aparador</a></li>
+            <li><a href="#">De Diseño</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h3>A Tu Gusto</h3>
+      <form action="" class="aTuGusto">
+        <h4>Para cuantas Personas?</h4>
+        <input type="number" name="porciones" id="porcionesPastel" min="10" max="300">
+        <hr>
+        
+        <div class="sabores">
+          <section>
+            <h4>Elige tu Bizcocho</h4>
+            <div>
+              <input type="radio" name="bizcocho" id="bizVainilla" value="vainilla">
+              <label for="bizVainilla">Vainilla</label>
+            </div>
+            
+            <div>
+              <input type="radio" name="bizcocho" id="bizChocolate" value="Chocolate">
+              <label for="bizChocolate">Chocolate</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizMarmoleado" value="Marmoleado">
+              <label for="bizMarmoleado">Marmoleado</label>
+            </div>
+            
+            <div>
+              <input type="radio" name="bizcocho" id="bizCafe" value="Café">
+              <label for="bizCafe">Café</label>
+            </div>
+            
+            <div>
+              <input type="radio" name="bizcocho" id="bizNuez" value="Nuez">
+              <label for="bizNuez">Nuez</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizAlmendra" value="Almendra">
+              <label for="bizAlmendra">Almendra</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizMantequilla" value="Mantequilla">
+              <label for="bizMantequilla">Mantequilla</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizLimon" value="Limon">
+              <label for="bizLimon">Limón</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizNaranja" value="Naranja">
+              <label for="bizNaranja">Naranja</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizRedVelvet" value="RedVelvet">
+              <label for="bizRedVelvet">Red Velvet</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizTeVerde" value="TeVerde">
+              <label for="bizTeVerde">Té Verde</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="bizcocho" id="bizZanahoria" value="Zanahoria">
+              <label for="bizZanahoria">Zanahoria</label>
+            </div>
+          </section>
+  
+          <section>
+            <h4>Elige el Relleno</h4>
+            <h5>Crema Batida</h5>
+            <div>
+              <input type="radio" name="relleno" id="rellCBatQueso" value="Queso">
+              <label for="rellCBatQueso">Queso</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatVainilla" value="Vainilla">
+              <label for="rellCBatVainilla">Vainilla</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatFresa" value="Fresa">
+              <label for="rellCBatFresa">Fresa</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatChocolate" value="Chocolate">
+              <label for="rellCBatChocolate">Chocolate</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatCafe" value="Cafe">
+              <label for="rellCBatCafe">Café</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatLimon" value="Limon">
+              <label for="rellCBatLimon">Limón</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatNaranjo" value="Naranjo">
+              <label for="rellCBatNaranjo">Naranjo</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatChocomenta" value="Chocomenta">
+              <label for="rellCBatChocomenta">Chocomenta</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatCaramelo" value="Caramelo">
+              <label for="rellCBatCaramelo">Caramelo</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatGalleta" value="Galleta">
+              <label for="rellCBatGalleta">Galleta</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatQuesoZarzamora" value="QuesoZarzamora">
+              <label for="rellCBatQueso Zarzamora">Queso Zarzamora</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatTeVerde" value="TeVerde">
+              <label for="rellCBatTé verde">Té verde</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatKittsuEspecial" value="KittsuEspecial">
+              <label for="rellCBatKittsu Especial">Kittsu Especial</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="rellCBatCremapastelera" value="Cremapastelera">
+              <label for="rellCBatCrema pastelera ">Crema pastelera </label>
+            </div>
+  
+            <h5>Trufa de Chocolate</h5>
+            <div>
+              <input type="radio" name="relleno" id="trufaChocolateBlanco" value="ChocolateBlanco">
+              <label for="trufaChocolateBlanco">Chocolate Blanco</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="trufaChocolateLeche" value="ChocolateLeche">
+              <label for="trufaChocolateLeche">Chocolate de Leche</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="trufaChocolateSemiamargo " value="ChocolateSemiamargo ">
+              <label for="trufaChocolateSemiamargo ">Chocolate Semiamargo </label>
+            </div>
+  
+            <h5>Crema de Mantequilla</h5>
+            <div>
+              <input type="radio" name="relleno" id="cMantqVainilla" value="Vainilla">
+              <label for="cMantqVainilla">Vainilla</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="cMantqAlmendra" value="Almendra">
+              <label for="cMantqAlmendra">Almendra</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="cMantqCafé" value="Cafe">
+              <label for="cMantqCafe">Café</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="relleno" id="cMantqMousseline " value="Mousseline ">
+              <label for="cMantqMousseline ">Mousseline </label>
+            </div>
+          </section>
+          
+          <section>
+            <h4>Extras</h4>
+            <div>
+              <input type="checkbox" name="extra1" id="cMantqFresas" value="Fresas">
+              <label for="cMantqFresas">Fresas</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra2" id="cMantqZarzamora" value="Zarzamora">
+              <label for="cMantqZarzamora">Zarzamora</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra3" id="cMantqMoraAzul" value="MoraAzul">
+              <label for="cMantqMoraAzul">Mora Azul</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra4" id="cMantqFrutosRojos" value="FrutosRojos">
+              <label for="cMantqFrutosRojos">Frutos Rojos</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra5" id="cMantqFrutaNatural" value="FrutaNatural">
+              <label for="cMantqFrutaNatural">Fruta Natural de Temporada</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra6" id="cMantqDuraznoAlmibar" value="DuraznoAlmibar">
+              <label for="cMantqDuraznoAlmibar">Durazno en Almíbar</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra7" id="cMantqPiñaAlmibar" value="PiñaAlmibar">
+              <label for="cMantqPiñaAlmibar">Piña en Almibar</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra8" id="cMantqTrocitosGalleta" value="TrocitosGalleta">
+              <label for="cMantqTrocitosGalleta">Trocitos de Galleta</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra9" id="cMantqTrocitosChocolate" value="TrocitosChocolate">
+              <label for="cMantqTrocitosChocolate">Trocitos de Chocolate</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra10" id="cMantqLunetas" value="Lunetas">
+              <label for="cMantqLunetas">Lunetas | M&Ms</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra11" id="cMantqMalvaviscos" value="Malvaviscos">
+              <label for="cMantqMalvaviscos">Malvaviscos</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra12" id="cMantqNueces" value="Nueces">
+              <label for="cMantqNueces">Nueces</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra13" id="cMantqAlmendras" value="Almendras">
+              <label for="cMantqAlmendras">Almendras</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra14" id="cMantqCacahuates" value="Cacahuates">
+              <label for="cMantqCacahuates">Cacahuates</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra15" id="cMantqCocoRallado" value="CocoRallado">
+              <label for="cMantqCocoRallado">Coco Rallado</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra16" id="cMantqCerezas" value="Cerezas">
+              <label for="cMantqCerezas">Cerezas</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra17" id="cMantqPasas" value="Pasas">
+              <label for="cMantqPasas">Pasas</label>
+            </div>
+    
+            <div>
+              <input type="checkbox" name="extra18" id="cMantqArandanos " value="Arandanos ">
+              <label for="cMantqArandanos ">Arandanos </label>
+            </div>
+          </section>
+  
+          <section>
+            <h4>Cobertura</h4>
+            <div>
+              <input type="radio" name="cobertura" id="cubCremaQueso" value="CremaQueso">
+              <label for="cubCremaQueso">CremaQueso</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="cobertura" id="cubCremaMantequilla" value="CremaMantequilla">
+              <label for="cubCremaMantequilla">CremaMantequilla</label>
+            </div>
+    
+            <div>
+              <input type="radio" name="cobertura" id="cubFondant" value="Fondant">
+              <label for="cubFondant">Fondant</label>
+            </div>
+          </section>
+        </div>
+        <hr>
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Dirección<br>Calle X #123<br>Colonia Estado de México</p>
+        <p>Teléfono<br>5512345678</p>
+        <p>Horarios<br>10:00 a 20:00 hrs</p>
+      </div>
+    </footer>
+    <script src="script.js" />
+  </body>
+
+</html>
